@@ -4,9 +4,9 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 
 public class SendTweet {
-    public static void main(String[] args) throws TwitterException {
+    public void sendTweet(String[] args)throws TwitterException {
         String tw="";
-        for (int i=0;i< args.length;i++)
+        for (int i=1;i< args.length;i++)
         {
             tw=tw+args[i];
             tw=tw+"  ";

@@ -6,7 +6,7 @@ import twitter4j.TwitterFactory;
 import java.util.List;
 
 public class LatestTweet {
-    public static void main(String[] args) throws TwitterException {
+    public  void latestTweet() throws TwitterException {
         Twitter twitter = TwitterFactory.getSingleton();
         List<Status> statuses = twitter.getHomeTimeline();
         System.out.println("Showing home timeline.");
